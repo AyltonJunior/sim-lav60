@@ -1,0 +1,62 @@
+{
+  "name": "monitor-sim",
+  "version": "1.0.0",
+  "description": "Sistema Integrado de Monitoramento",
+  "main": "electron/main.js",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "build": {
+    "appId": "com.monitor-sim.app",
+    "productName": "Monitor SIM",
+    "directories": {
+      "output": "./dist"
+    },
+    "files": [
+      "electron/**/*",
+      ".next/**/*"
+    ],
+    "win": {
+      "target": "dir"
+    }
+  },
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tanstack/react-query": "^5.64.2",
+    "autoprefixer": "^10.4.20",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "electron-is-dev": "^2.0.0",
+    "electron-serve": "^2.1.1",
+    "firebase": "^10.7.0",
+    "lucide-react": "^0.474.0",
+    "next": "14.0.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss": "^3.3.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/electron": "^1.6.12",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "concurrently": "^8.2.2",
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5",
+    "wait-on": "^7.2.0"
+  }
+}
